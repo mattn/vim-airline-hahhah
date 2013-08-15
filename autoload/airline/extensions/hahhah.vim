@@ -4,6 +4,6 @@ function! airline#extensions#hahhah#apply()
   endif
   let w:airline_section_gutter =
         \ g:airline_left_sep
-        \ .' %{g:HahHah()}'
+        \ .' %{hahhah#get_text()}'
         \ .w:airline_section_gutter
 endfunction
