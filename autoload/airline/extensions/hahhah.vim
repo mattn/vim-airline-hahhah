@@ -1,4 +1,4 @@
-function! airline#extensions#hahhah#apply()
+function! airline#extensions#hahhah#apply(...)
   let w:airline_section_z = get(w:, 'airline_section_z', ' ')
   let w:airline_section_z .=
         \ g:airline_left_sep
