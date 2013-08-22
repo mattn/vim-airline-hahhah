@@ -1,4 +1,5 @@
-function! airline#extensions#hahhah#init(...)
+function! airline#extensions#hahhah#init(ext)
+  call a:ext.add_statusline_funcref(function('airline#extensions#hahhah#apply'))
 endfunction
 
 function! airline#extensions#hahhah#apply(...)
