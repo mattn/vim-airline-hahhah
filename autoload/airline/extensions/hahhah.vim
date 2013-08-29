@@ -3,9 +3,6 @@ function! airline#extensions#hahhah#init(ext)
 endfunction
 
 function! airline#extensions#hahhah#apply(...)
-  let w:airline_section_z = get(w:, 'airline_section_z', ' ')
-  let w:airline_section_z .=
-        \ g:airline_left_sep
-        \ .' %{hahhah#get_text()}'
-        \ .w:airline_section_z
+  let w:airline_section_c = get(w:, 'airline_section_c', g:airline_section_c)
+  let w:airline_section_c .= g:airline_left_sep . ' %{hahhah#get_text()}'
 endfunction
